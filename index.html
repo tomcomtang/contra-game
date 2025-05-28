@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/gif" href="images/favicon.ico" />
+  <title>Contra</title>
+  <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+  <script src="lib/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/dynamicaudio-min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/nes.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/utils.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/cpu.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/keyboard.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/mappers.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/papu.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/ppu.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/rom.js" type="text/javascript" charset="utf-8"></script>
+  <script src="source/ui.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    var nes;
+    $(function () {
+      nes = new JSNES({
+        'ui': $('#emulator').JSNESUI({
+          "Contra": [
+            ['Contra (U)', 'roms/Contra/Contra1(U)30.nes']
+          ],
+        })
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div id="templatemo_wrapper_outer">
+    <div id="templatemo_wrapper_inner">
+
+      <div id="templatemo_content_wrapper">
+
+        <div class="templatemo_play margin_right_10">
+          <center>
+            <div id="emulator"></div>
+          </center>
+        </div> <!-- end of content -->
+
+        <div class="cleaner"></div>
+      </div> <!-- end of content wrapper -->
+    </div>
+  </div>
+
+  <div class="margin_bottom_10"></div>
+
+  <script>
+    // Execute after page load
+    $(function () {
+      // Select first ROM option
+      $('.nes-roms select').val('roms/Contra/Contra1(U)30.nes');
+      // Trigger change event to load ROM
+      $('.nes-roms select').trigger('change');
+      // Trigger fullscreen button click
+      $('.nes-zoom').trigger('click');
+    });
+  </script>
+</body>
+
+</html>
