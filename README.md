@@ -22,10 +22,6 @@
 4. 将本仓库代码上传到EdgeOne
 5. 等待部署完成，即可通过分配的域名访问游戏
 
-### 在线体验
-
-你也可以直接访问在线版本：[https://tomcomtang.github.io/contra-game/](https://tomcomtang.github.io/contra-game/)
-
 ## 🎯 游戏操作
 
 - **WASD键**：控制角色移动（上、左、下、右）
@@ -60,11 +56,20 @@ contra-game/
 
 ## 📄 许可证
 
-本项目仅供学习和研究使用。魂斗罗是Konami的注册商标。
+本项目仅供个人学习和研究使用，禁止用于商业用途。
+
+### 版权声明
+
+- 本项目参考了 [wanghao221/moyu](https://github.com/wanghao221/moyu) 项目的实现方式
+- 魂斗罗(Contra)是Konami Digital Entertainment Co., Ltd.的注册商标
+- 本项目仅用于学习和研究NES模拟器技术，不用于任何商业目的
+- 请勿将本项目用于任何商业用途
+- 使用本项目产生的任何法律责任由使用者自行承担
 
 ## 🙏 致谢
 
 - 感谢原版魂斗罗游戏开发团队
+- 感谢 [wanghao221/moyu](https://github.com/wanghao221/moyu) 项目的开源贡献
 - 感谢所有为这个项目做出贡献的开发者
 
 ## 📞 联系方式
