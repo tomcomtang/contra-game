@@ -16,20 +16,12 @@
 
 [![Deploy to EdgeOne](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https://github.com/tomcomtang/contra-game&source=tomchild)
 
-1. 访问 [EdgeOne控制台](https://console.edgeone.tencent.com/)
-2. 创建新的站点
-3. 选择"静态网站托管"
-4. 将本仓库代码上传到EdgeOne
-5. 等待部署完成，即可通过分配的域名访问游戏
-
 ## 🎯 游戏操作
 
 - **WASD键**：控制角色移动（上、左、下、右）
 - **J键**：射击
 - **K键**：跳跃
-- **C键**：切换武器
 - **Enter键**：开始游戏/暂停
-- **ESC键**：退出游戏
 
 ## 🛠️ 技术栈
 
