@@ -14,6 +14,8 @@
 
 ### EdgeOne部署
 
+[![Deploy to EdgeOne](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https://github.com/tomcomtang/contra-game&source=tomchild)
+
 1. 访问 [EdgeOne控制台](https://console.edgeone.tencent.com/)
 2. 创建新的站点
 3. 选择"静态网站托管"
