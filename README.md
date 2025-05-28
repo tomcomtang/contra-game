@@ -22,40 +22,15 @@
 4. 将本仓库代码上传到EdgeOne
 5. 等待部署完成，即可通过分配的域名访问游戏
 
-### 本地部署
-
-1. 克隆仓库
-```bash
-git clone https://github.com/tomcomtang/contra-game.git
-```
-
-2. 进入项目目录
-```bash
-cd contra-game
-```
-
-3. 使用任意Web服务器托管项目文件
-   - 可以使用Python的简易服务器：
-     ```bash
-     # Python 3
-     python -m http.server 8000
-     ```
-   - 或者使用Node.js的http-server：
-     ```bash
-     npx http-server
-     ```
-
-4. 在浏览器中访问 `http://localhost:8000` 即可开始游戏
-
 ### 在线体验
 
 你也可以直接访问在线版本：[https://tomcomtang.github.io/contra-game/](https://tomcomtang.github.io/contra-game/)
 
 ## 🎯 游戏操作
 
-- **方向键**：控制角色移动
-- **Z键**：跳跃
-- **X键**：射击
+- **WASD键**：控制角色移动（上、左、下、右）
+- **J键**：射击
+- **K键**：跳跃
 - **C键**：切换武器
 - **Enter键**：开始游戏/暂停
 - **ESC键**：退出游戏
