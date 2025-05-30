@@ -26,31 +26,28 @@
           "Contra": [
             ['Contra (U)', 'roms/Contra/Contra1(U)30.nes']
           ],
-        })
+        }),
+        'audio': {
+          'enabled': true,
+          'volume': 1.0
+        },
+        'opts': {
+          'emulateSound': true
+        }
       });
     });
   </script>
-
 </head>
 
 <body>
-  <div id="templatemo_wrapper_outer">
-    <div id="templatemo_wrapper_inner">
-
-      <div id="templatemo_content_wrapper">
-
-        <div class="templatemo_play margin_right_10">
-          <center>
-            <div id="emulator"></div>
-          </center>
-        </div> <!-- end of content -->
-
-        <div class="cleaner"></div>
-      </div> <!-- end of content wrapper -->
-    </div>
+  <div class="game-container">
+    <div id="emulator"></div>
   </div>
 
-  <div class="margin_bottom_10"></div>
+  <div class="sound-control" id="soundControl">
+    <span class="sound-icon" id="soundIcon">🔇</span>
+    <span class="sound-text" id="soundText">Sound Off</span>
+  </div>
 
   <script>
     // Execute after page load
@@ -61,6 +58,23 @@
       $('.nes-roms select').trigger('change');
       // Trigger fullscreen button click
       $('.nes-zoom').trigger('click');
+      
+      // 显示控制按钮
+      $('.nes-controls').show();
+      $('.nes-status').show();
+      
+      // 声音控制点击事件
+      $('#soundControl').click(function() {
+        $('.nes-enablesound').trigger('click');
+        // 切换图标和文字
+        if ($('#soundIcon').text() === '🔇') {
+          $('#soundIcon').text('🔊');
+          $('#soundText').text('Sound On');
+        } else {
+          $('#soundIcon').text('🔇');
+          $('#soundText').text('Sound Off');
+        }
+      });
     });
   </script>
 </body>

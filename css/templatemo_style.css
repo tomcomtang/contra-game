@@ -9,7 +9,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #999;
-	background: #272525 url(../images/templatemo_top_bg.jpg) repeat-x;
+	background: #272525;
 	overflow: hidden !important;
 	width: 100vw !important;
 	height: 100vh !important;
@@ -200,12 +200,15 @@ img {
 }
 
 .templatemo_play {
-	float: left;
-	width: 635px;
-	height: 550px;
-	padding: 20px 19px 0 19px;
-	background: #1b1919;
-	border: 1px solid #363434;
+	width: auto !important;
+	height: 100vh !important;
+	padding: 0 !important;
+	margin: 0 auto !important;
+	border: none !important;
+	max-width: none !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header_01 {
@@ -397,40 +400,43 @@ img {
 }
 
 #emulator {
-	width: 100vw !important;
+	width: auto !important;
 	height: 100vh !important;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 !important;
+	margin: 0 auto !important;
 	padding: 0 !important;
 }
 
 #emulator canvas {
-	width: 100vw !important;
+	width: auto !important;
 	height: 100vh !important;
-	object-fit: cover !important;
+	object-fit: contain !important;
 	margin: 0 !important;
 	padding: 0 !important;
-}
-
-.templatemo_play {
-	width: 100vw !important;
-	height: 100vh !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	border: none !important;
-	max-width: none !important;
 }
 
 #templatemo_wrapper_outer,
 #templatemo_wrapper_inner,
 #templatemo_content_wrapper {
-	width: 100vw !important;
+	width: 100% !important;
+	height: 100vh !important;
 	max-width: none !important;
 	padding: 0 !important;
 	margin: 0 !important;
 	background: none !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#templatemo_banner,
+#templatemo_menu,
+.templatemo_content,
+.templatemo_side_bar,
+#templatemo_footer {
+	display: none !important;
 }
 
 .nes-controls {
@@ -438,9 +444,56 @@ img {
 }
 
 .nes-status {
-	display: none !important;
+	display: block !important;
+}
+
+.nes-enablesound {
+	display: block !important;
 }
 
 .nes-roms {
 	display: none !important;
+}
+
+.sound-control {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	padding: 10px 15px;
+	transition: all 0.3s ease;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.sound-control:hover {
+	background: rgba(0, 0, 0, 0.8);
+	transform: scale(1.1);
+}
+
+.sound-icon {
+	font-size: 24px;
+	line-height: 1;
+}
+
+.sound-text {
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.game-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #1b1919;
+	overflow: hidden;
 }
